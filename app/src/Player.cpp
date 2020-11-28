@@ -1,5 +1,10 @@
 #include "Player.h"
 
+Player::Player() {
+    setNotifyInterval(10);
+    setVolume(70);
+}
+
 Player::~Player() {}
 
 bool Player::isPlaying() const { return m_isPlaying; }

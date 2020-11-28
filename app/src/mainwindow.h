@@ -57,27 +57,13 @@ private slots:
 
     void on_button_forward_clicked();
 
-    void on_RadioROKS_clicked();
-
-    void on_HitFM_clicked();
-
-    void on_Stop_clicked();
-
-    void on_Play_clicked();
-
-    void on_RadioJazz_clicked();
-
-    void on_KissFM_clicked();
-
 private:
     Ui::MainWindow *ui;
     QStandardItemModel *m_playListModel;
     std::unique_ptr<Player> m_player;
     std::unique_ptr<PlaylistCtrl> m_playlistCtrl;
-    QMediaPlaylist *m_playlist;
     bool play = false;
     int slidePostion = 0;
-    QMediaPlayer *radio_player = new QMediaPlayer;
 };
 
 #endif // MAINWINDOW_H

@@ -2,11 +2,13 @@ cmake_minimum_required(VERSION 3.17)
 
 set(SOURCES mainwindow.cpp
             Player.cpp
-            PlaylistCtrl.cpp)
+            PlaylistCtrl.cpp
+            DBCtrl.cpp)
 
 set(HEADERS mainwindow.h
             Player.h
-            PlaylistCtrl.h)
+            PlaylistCtrl.h
+            DBCtrl.h)
 
 set(UI mainwindow.ui)
 
@@ -19,5 +21,6 @@ target_link_libraries(src PRIVATE Qt${QT_VERSION_MAJOR}::Core
         Qt${QT_VERSION_MAJOR}::Widgets
         Qt${QT_VERSION_MAJOR}::Gui
         Qt${QT_VERSION_MAJOR}::Multimedia
+        Qt${QT_VERSION_MAJOR}::Sql
         tag
 )

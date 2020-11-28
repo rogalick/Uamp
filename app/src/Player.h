@@ -5,7 +5,7 @@
 
 class Player : public QMediaPlayer {
 public:
-    Player() = default;
+    Player();
     ~Player();
 
     bool isPlaying() const;
